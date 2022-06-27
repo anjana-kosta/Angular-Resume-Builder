@@ -790,7 +790,9 @@
   </form>
 </div>
 
-<app-resume *ngIf="showResume" resumedataInput ="formData"></app-resume>
+<app-resume *ngIf="showResume" [formData]="formData" (editInfoEvent)="editinfo($event)"></app-resume>
+
+
 
 <!-- 
   "strictPropertyInitialization":false,
@@ -826,5 +828,5 @@ editinfoEvent: eventEmitter<void> sresume
 
 
   add the construct
-  this.editinfoEvent = new eventEmitter<void>();
+  this.editinfoEvent = new EventEmitter<void>();
 -->

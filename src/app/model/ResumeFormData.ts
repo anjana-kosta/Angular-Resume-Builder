@@ -62,5 +62,6 @@ export interface ResumeFormData{
   project:string;
   describe:string;
   declare:string;
+ // pic: string;
 
 }
