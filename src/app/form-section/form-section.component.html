@@ -790,4 +790,41 @@
   </form>
 </div>
 
-<app-resume *ngIf="showResume"></app-resume>
+<app-resume *ngIf="showResume" resumedataInput ="formData"></app-resume>
+
+<!-- 
+  "strictPropertyInitialization":false,
+  <tag [attri-name]="value"> add html
+    @Input ts  add file
+resumeDataInput:ResumeFormData
+
+
+  input paramete(parent pass input to the child)
+parent pass the input as an attribute to the template selector the cild recieve the data throught a decorator called @input -->
+
+<!-- (click) "fnName()" using a event emiiter
+
+add the resume component html  <button class ="btn btn-primary" (click) ="editinfo()"> Edit info</button>
+
+add the resume c ts
+editinfo(): void {
+  alert("prepating the value fill please wait");
+  this.editInfoEvent.emit(true);
+}
+
+(editInfoEvent)="editinfo($event)" html form
+
+editinfo(editInfo: boolean){
+alert(editInfo)
+  this.showResume = false; !editInfo; form secton in ts
+}
+
+@output 
+editinfoEvent: eventEmitter<void> sresume
+
+
+
+
+  add the construct
+  this.editinfoEvent = new eventEmitter<void>();
+-->

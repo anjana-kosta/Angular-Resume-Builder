@@ -8,6 +8,8 @@ import { ResumeFormData } from '../model/ResumeFormData';
 })
 export class ResumeComponent  {
 
+
+  
   formData: ResumeFormData;
   constructor() { 
     let data = (localStorage.getItem("formData") ? localStorage.getItem("formData") : "{}") as string;

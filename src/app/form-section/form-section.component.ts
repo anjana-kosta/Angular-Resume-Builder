@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ResumeFormData } from '../model/ResumeFormData';
 
 @Component({
@@ -7,6 +7,7 @@ import { ResumeFormData } from '../model/ResumeFormData';
   styleUrls: ['./form-section.component.css']
 })
 export class FormSectionComponent {
+
 
 formData: ResumeFormData;
   showResume: boolean = false;
